@@ -58,7 +58,7 @@ function displayNum(num, ifMoney){
 //function that recalculates the multipliers associated with upgrades
 function calcMult(mult){
 	var index = mult - 1;
-	calcMult.factors = [0.0005*(2^(player.infiniCurr)), 0.002*(2^(player.infiniCurr)), 0.005*(2^(player.infiniCurr)), 0.01*(2^(player.infiniCurr)), 0.02*(2^(player.infiniCurr)), 0.04*(2^(player.infiniCurr)), 0.06*(2^(player.infiniCurr))];
+	calcMult.factors = [0.0005*(2^player.infiniCurr), 0.002*(2^player.infiniCurr), 0.005*(2^player.infiniCurr), 0.01*(2^player.infiniCurr), 0.02*(2^player.infiniCurr), 0.04*(2^player.infiniCurr), 0.06*(2^player.infiniCurr)];
 	var totalBuildings = 0;
 	
 	for(var i = mult*5 - 5; i < mult*5; i++){
